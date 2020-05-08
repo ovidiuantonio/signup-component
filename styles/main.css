@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (min-width: 2350px) {
+  html {
+    font-size: 92.5%;
+  }
+}
+
+@media only screen and (max-width: 2300px) {
+  html {
+    font-size: 82.5%;
+  }
+}
+
+@media only screen and (max-width: 2050px) {
+  html {
+    font-size: 72.5%;
+  }
+}
+
+@media only screen and (max-width: 1850px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  html {
+    font-size: 42.5%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  html {
+    font-size: 32.5%;
+  }
+}
+
+body {
+  background: url("../images/bg-intro-desktop.png"), #ff7a7a;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-primary {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 7rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .header-primary {
+    padding-top: 5rem;
+  }
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  width: 80%;
+  margin-top: 5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .paragraph {
+    margin: auto;
+    padding: 5rem 0 10vh 0;
+  }
+}
+
+.page {
+  width: 80vw;
+  height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  margin: 5vh auto;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 5rem;
+          column-gap: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .page {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    row-gap: 5rem;
+    height: 70vh;
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .page {
+    width: 80vw;
+  }
+}
+
+.component__trial-box {
+  width: 100%;
+  text-align: center;
+  background-color: #6055a5;
+  padding: 3rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 5rem;
+}
+
+.component__trial-box-text {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.component__trial-box-text-bold {
+  font-weight: 600;
+}
+
+.component__form {
+  padding: 4rem 0 2rem 0;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  -webkit-box-shadow: 0 1rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.component__form__email {
+  position: relative;
+}
+
+.component__form__input {
+  display: block;
+  width: 85%;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
+  border: 2px solid rgba(62, 60, 73, 0.2);
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3e3c49;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.component__form__input-error {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  bottom: 50%;
+  left: 1%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.component__form__input[type="email"]:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.component__form__input:focus {
+  border: 2px solid rgba(62, 60, 73, 0.5);
+}
+
+.component__form__button {
+  display: block;
+  width: 85%;
+  margin: 3vh auto;
+  padding: 2rem 3rem;
+  border: 3px solid rgba(62, 60, 73, 0.2);
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: #fff;
+  background-color: #38cc8c;
+  cursor: pointer;
+}
+
+.component__form__paragraph {
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgba(62, 60, 73, 0.5);
+}
+
+.component__form__paragraph-anchor {
+  color: #ff7a7a;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .component__form {
+    margin-bottom: 10rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="page__text">
+        <h1 class="header-primary">Learn to code by watching others</h1>
+        <p class="paragraph">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <div class="page__component">
+        <div class="component__trial-box">
+          <h1 class="component__trial-box-text">
+            <span class="component__trial-box-text-bold"
+              >Try it free 7 days</span
+            >
+            then $20/mo. thereafter
+          </h1>
+        </div>
+        <form action="/" class="component__form">
+          <input
+            type="text"
+            name="fName"
+            placeholder="First Name"
+            class="component__form__input"
+          />
+          <input
+            type="text"
+            name="lName"
+            placeholder="Last Name"
+            class="component__form__input"
+          />
+          <div class="component__form__email">
+            <img
+              src="images/icon-error.svg"
+              alt=""
+              class="component__form__input-error error"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              class="component__form__input email"
+            />
+          </div>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            class="component__form__input"
+          />
+          <button class="component__form__button" type="submit">
+            Claim your free trial
+          </button>
+          <p class="component__form__paragraph">
+            By clicking the button, you are agreeing to our
+            <a href="#" class="component__form__paragraph-anchor"
+              >Terms and Services</a
+            >
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
